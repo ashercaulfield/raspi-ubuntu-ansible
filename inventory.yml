@@ -2,13 +2,13 @@
 
 all:
   hosts:
-    rashome1:
+    raspberrypi:
     pimaster:
     piworker[1:3]:   
   children:
     standalone:
       hosts:
-        rashome1:
+        raspberrypi:
     kubernetes:
       hosts:
         pimaster:

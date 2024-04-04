@@ -9,7 +9,7 @@
 #
 
 # Set your hostname here, the manage_etc_hosts will update the hosts file entries as well
-hostname: rashome1
+hostname: raspberrypi
 
 # Enable password authentication with the SSH daemon
 ssh_pwauth: true
@@ -24,11 +24,8 @@ users:
   groups: users,adm,dialout,audio,plugdev,netdev,video
   lock_passwd: true
   ssh-authorized-keys:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDtpAxHXoJaIxbbfkTZGh6IPqCfQyD7oBSwDxdocNmzxbMXbfqwML/CN7Rfp0icBC+fCL03LgcpmZ9nuF1Jvfjp90JhnXWD2hrnLjBrOaP4x6RlTSkFLSLxgJaLe6JTjb3pMJmkPgqpNhtC/T2SyfG8G5MRDnNItyn5vof2ZxanDO5rs2unNpr11LIFqa9s/UmjUQFOgeqWT8OZWY239abdMzh2OvY4gsDn5KCOHuzPdy8zcYeevLozInY4kNvywZtx+KkA0j6X9LHTO0Il7IzvPcdpw8VlqMK/mw3ENcE4aHfbmGyRKOSmamP5Wi0fCZqjXYnFQy+nyBIkz7Yi3IFQjUVuCuafIBvDmWUCuYiL3fmCH4R+KdNzE/Jes3zXABjcYF89fHRu2O99kKKjj53Un7SUdghtJrH9h4FJKOrZHgRqT4udJ2vOwxJB9qwW8Q0vqn/U79Ds80+H3updm40OUJB93LtMPpwqIKghuDsFaYO/J62zK38UBLZpUvKeCf8= ansible@rashome1
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzfRt4ENAOTaKs7vZss02mimwibdyWNV3wOp79o5JRTOzJLdyFoH/rOU/NN44V/Qc9k3Qm2qNvFJ8YFzLd1RH+O1cvNY+R7zMOppWnLgIikE2uZ52MDnOpq2TgAmekRL2lL1RqFyg6Hexspehmw1PklreRQ+925zzkxSF0R1PXrrHHvZ2lKJCb+ViL0R4Ul7WMSDv6FAoilH/upDOWFlXo9oyt8jKS6fhMX3LMOk6mptxg8GotMSl8CfaVegIj9/2YISCFY4sOLZDJMz7d+aLE4nKOOoWlKcYbVFW6HmsbpzFP4gdFYqJ9z6vSBIfc0TzGLW6jpxY6/Z7QlOD1JZDiehDMhTysh9+I7jGYCl7dx7zEwPOWpmChEjQmvgXT76YQeJLn0ZFPTXAtr5zmNoGtslgADzOwSgnB1MzGjT7I1FNG3kC6EbJhV3zLuEWdcAGx20MMorcwqhA+0yQwQgGCVyBmenUYCDaZ5oEeNdFOUVDWJMAeYZbGrKGvYNehoFaQW1sW4JCSxvgPVajQf/rgFEEidWhNgkDgKTrlmS4IPA28tVFpcwTanS8Lr/4T911Yqh1sikdSRerXx0b6lfKmPSUbW2Tme3BGnjc1PfGSg92R3OhXECU7lL/FWVL3Z9KugO1s+AgQmCqVCGbe1GuAMi1ZCgJTudR9qjR56pEbjw== ansible@raspberrypi
 
-## Update apt database and upgrade packages on first boot
-package_update: true
-package_upgrade: true
 
 ## Install additional packages on first boot
 packages:
